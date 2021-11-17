@@ -34,6 +34,10 @@ body {
   text-align: justify;
   padding: .5rem; }
 
+.border-start-custom {
+  border-right: 3px solid #62f3ecda;
+  padding-right: 1rem; }
+
 #header {
   background-color: #000000c0;
   height: 90vh;
@@ -113,10 +117,6 @@ body {
       position: absolute;
       top: 33%;
       color: #62f3ecda; }
-
-.border-start-custom {
-  border-right: 3px solid #62f3ecda;
-  padding-right: 1rem; }
 
 #what_we_do_section {
   overflow-x: hidden !important; }
