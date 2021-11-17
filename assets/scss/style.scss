@@ -56,6 +56,14 @@ body {
 button.bg-main:hover {
     background-color: darken($color: $main-color, $amount: 10);
 }
+button
+{
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
 
 #header {
     background-color: #000000c0;
@@ -295,7 +303,25 @@ button.bg-main:hover {
     }
 }
 
-#posts_section {
+#posts_section{
+    position: relative;
+    background-color: hsla(0, 0%, 0%, 0.849);
+    &::before{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url("../images/article.png") ;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      
+    }
+   
+
     .post {
         position: relative;
 
@@ -321,7 +347,7 @@ button.bg-main:hover {
                 -moz-transition: all 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
                 -ms-transition: all 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
                 -o-transition: all 200ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
-}
+            }
             a:hover
             {
                 color: #e66a17e3 !important;
@@ -377,9 +403,5 @@ button.bg-main:hover {
         }
 
     }
-
-
-
-
 
 }
